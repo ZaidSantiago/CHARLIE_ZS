@@ -168,15 +168,15 @@ form.addEventListener('keyup', (e) => {
 if (chatContainer.innerHTML.includes("Hi")) {
   alert("hi");
 }
-else if (chatContainer.innerHTML.includes("Youtube")) {
+ if (chatContainer.innerHTML.includes("Youtube")) {
   alert("Youtube commands are not supported yet.");
 }
 
-else if (chatContainer.innerHTML.includes("Location")) {
+ if (chatContainer.innerHTML.includes("Location")) {
   alert("Location services are not supported yet.");
 }
 
-else if (chatContainer.innerHTML.includes("Canelo")) {
+ if (chatContainer.innerHTML.includes("Canelo")) {
   console.log('canelo triggered')
   window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
 }
