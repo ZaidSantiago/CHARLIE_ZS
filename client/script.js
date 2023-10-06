@@ -168,3 +168,16 @@ form.addEventListener('keyup', (e) => {
 if (chatContainer.innerHTML.includes("Hi")) {
   alert("hi");
 }
+else if (chatContainer.innerHTML.includes("Youtube")) {
+  alert("Youtube commands are not supported yet.");
+}
+
+else if (chatContainer.innerHTML.includes("Location")) {
+  alert("Location services are not supported yet.");
+}
+
+else if (chatContainer.innerHTML.includes("Canelo")) {
+  window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
+}
+
+console.log("Joel Iyalla vs African")
