@@ -177,6 +177,7 @@ else if (chatContainer.innerHTML.includes("Location")) {
 }
 
 else if (chatContainer.innerHTML.includes("Canelo")) {
+  console.log('canelo triggered')
   window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
 }
 
