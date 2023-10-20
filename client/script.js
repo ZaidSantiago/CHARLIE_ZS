@@ -115,22 +115,22 @@ const handleSubmit = async (e) => {
     const parsedData = data.bot.trim();
 
     typeText(messageDiv, parsedData);
-    if (messageDiv.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
+    if (chatContainer.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
       alert("hi");
     }
-     if (messageDiv.innerHTML.includes("youtube")) {
+     if (chatContainer.innerHTML.includes("youtube")) {
       alert("Youtube commands are not supported yet.");
     }
     
-     if (messageDiv.innerHTML.includes("location")) {
+     if (chatContainer.innerHTML.includes("location")) {
       alert("Location services are not supported yet.");
     }
     
-     if (messageDiv.innerHTML.includes("canelo") || chatContainer.innerHTML.includes("Canelo")) {
+     if (chatContainer.innerHTML.includes("canelo") || chatContainer.innerHTML.includes("Canelo")) {
       console.log('canelo triggered')
       window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
     }
-    if (messageDiv.innerHTML.includes("kevin") || chatContainer.innerHTML.includes("Kevin")) {
+    if (chatContainer.innerHTML.includes("kevin") || chatContainer.innerHTML.includes("Kevin")) {
       console.log('kevin triggered')
       window.open('https://docs.google.com/document/d/1mv5BO5E1iXFZohhFx8n0D5WZh7qC3aBmJ8lKjjP_bY4/edit?usp=sharing');
     }
