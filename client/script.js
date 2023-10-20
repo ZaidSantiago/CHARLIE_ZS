@@ -132,7 +132,7 @@ const handleSubmit = async (e) => {
     }
     if (chatContainer.innerHTML.includes("kevin") || chatContainer.innerHTML.includes("Kevin")) {
       console.log('kevin triggered')
-      window.open('./assets/kevin.jpg');
+      window.open('https://docs.google.com/document/d/1mv5BO5E1iXFZohhFx8n0D5WZh7qC3aBmJ8lKjjP_bY4/edit?usp=sharing');
     }
   } else {
     const err = await response.text();
