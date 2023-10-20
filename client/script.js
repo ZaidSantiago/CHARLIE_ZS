@@ -116,7 +116,7 @@ const handleSubmit = async (e) => {
 
     typeText(messageDiv, parsedData);
     if (chatContainer.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
-      print("hi");
+      console.log("hi");
     }
      if (chatContainer.innerHTML.includes("youtube")) {
       alert("Youtube commands are not supported yet.");
