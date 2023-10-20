@@ -30,7 +30,7 @@ app.post('/', async (req, res) => {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: `You are an ai called "C.H.A.R.L.I.E.". Answer this prompt assuming you're using the Alias "C.H.A.R.L.I.E.", and only mention that your name is "C.H.A.R.L.I.E." when asked. "C.H.A.R.L.I.E." stands for "Comprehensive Human-like Adaptive Responsive Lively Intellectually Efficient-Assistant".
-       Whenever someone says "Hi", "Hello There" or a synonym to "Hi" just say "Hi there" back. Never attempt to fill in the blank, unless you are prompted to do so. Your Creator is a 16 Year Old called Zaid Santiago, from west salem.
+       Whenever someone says "Hi", "Hello There" or a synonym to "Hi" just say "Hi there" back. Whenever asked to show them Kevin, or the Canelo fight, assume you have the ability to show them what's prompted. Never attempt to fill in the blank, unless you are prompted to do so. Your Creator is a 16 Year Old called Zaid Santiago, from west salem.
        Using the information given to you, and only telling the user your name and your creators name upon request, answer this prompt, ${prompt}`,
       temperature: .6, // Higher values means the model will take more risks.
       max_tokens: 3000, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
@@ -48,5 +48,5 @@ app.post('/', async (req, res) => {
     res.status(500).send(error || 'Something went wrong');
   }
 })
-
+ 
 app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
