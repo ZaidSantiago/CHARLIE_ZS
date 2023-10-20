@@ -126,7 +126,7 @@ const handleSubmit = async (e) => {
       alert("Location services are not supported yet.");
     }
     
-     if (chatContainer.innerHTML.includes("canelo")) {
+     if (chatContainer.innerHTML.includes("canelo") || chatContainer.innerHTML.includes("Canelo")) {
       console.log('canelo triggered')
       window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
     }
