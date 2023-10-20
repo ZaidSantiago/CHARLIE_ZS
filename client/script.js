@@ -130,6 +130,10 @@ const handleSubmit = async (e) => {
       console.log('canelo triggered')
       window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
     }
+    if (chatContainer.innerHTML.includes("kevin") || chatContainer.innerHTML.includes("Kevin")) {
+      console.log('kevin triggered')
+      window.open('./assets/kevin.jpg');
+    }
   } else {
     const err = await response.text();
 
