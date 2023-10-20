@@ -121,6 +121,9 @@ const handleSubmit = async (e) => {
      if (chatContainer.innerHTML.includes("youtube")) {
       alert("Youtube commands are not supported yet.");
     }
+    if (chatContainer.innerHTML.includes("smith") || chatContainer.innerHTML.includes("Smith")) {
+      window.open("http://smithcsrobot.weebly.com/");
+    }
     
      if (chatContainer.innerHTML.includes("location")) {
       alert("Location services are not supported yet.");
