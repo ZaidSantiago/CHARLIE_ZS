@@ -125,6 +125,10 @@ const handleSubmit = async (e) => {
       console.log('smith triggered')
       window.open('http://smithcsrobot.weebly.com/');
     }
+    if (chatContainer.innerHTML.includes("myself") || chatContainer.innerHTML.includes("Myself")) {
+      console.log('charlie image triggered')
+      window.open('https://i.pinimg.com/originals/de/23/83/de238328593da21dbf9185ed3f7d991d.gif');
+    }
     
      if (chatContainer.innerHTML.includes("location")) {
       alert("Location services are not supported yet.");
