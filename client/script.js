@@ -115,6 +115,21 @@ const handleSubmit = async (e) => {
     const parsedData = data.bot.trim();
 
     typeText(messageDiv, parsedData);
+    if (chatContainer.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
+      alert("hi");
+    }
+     if (chatContainer.innerHTML.includes("youtube")) {
+      alert("Youtube commands are not supported yet.");
+    }
+    
+     if (chatContainer.innerHTML.includes("location")) {
+      alert("Location services are not supported yet.");
+    }
+    
+     if (chatContainer.innerHTML.includes("canelo")) {
+      console.log('canelo triggered')
+      window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
+    }
   } else {
     const err = await response.text();
 
@@ -141,22 +156,6 @@ recognition.addEventListener('result', (e) => {
     .join('')
     console.log(text);
     p.innerHTML = text;
-    
-if (chatContainer.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
-  alert("hi");
-}
- if (chatContainer.innerHTML.includes("youtube")) {
-  alert("Youtube commands are not supported yet.");
-}
-
- if (chatContainer.innerHTML.includes("location")) {
-  alert("Location services are not supported yet.");
-}
-
- if (chatContainer.innerHTML.includes("canelo")) {
-  console.log('canelo triggered')
-  window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
-}
     
    }
 )
