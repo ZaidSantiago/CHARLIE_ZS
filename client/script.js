@@ -122,7 +122,8 @@ const handleSubmit = async (e) => {
       alert("Youtube commands are not supported yet.");
     }
     if (chatContainer.innerHTML.includes("smith") || chatContainer.innerHTML.includes("Smith")) {
-      window.open("http://smithcsrobot.weebly.com/");
+      console.log('smith triggered')
+      window.open('http://smithcsrobot.weebly.com/');
     }
     
      if (chatContainer.innerHTML.includes("location")) {
