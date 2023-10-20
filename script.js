@@ -145,15 +145,15 @@ recognition.addEventListener('result', (e) => {
 if (chatContainer.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
   alert("hi");
 }
- if (chatContainer.innerHTML.includes.toLowerCase("youtube")) {
+ if (chatContainer.innerHTML.includes("youtube")) {
   alert("Youtube commands are not supported yet.");
 }
 
- if (chatContainer.innerHTML.includes.toLowerCase("location")) {
+ if (chatContainer.innerHTML.includes("location")) {
   alert("Location services are not supported yet.");
 }
 
- if (chatContainer.innerHTML.includes.toLowerCase("canelo")) {
+ if (chatContainer.innerHTML.includes("canelo")) {
   console.log('canelo triggered')
   window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
 }
