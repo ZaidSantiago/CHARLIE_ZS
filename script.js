@@ -142,6 +142,21 @@ recognition.addEventListener('result', (e) => {
     console.log(text);
     p.innerHTML = text;
     
+if (chatContainer.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
+  alert("hi");
+}
+ if (chatContainer.innerHTML.includes.toLowerCase("youtube")) {
+  alert("Youtube commands are not supported yet.");
+}
+
+ if (chatContainer.innerHTML.includes.toLowerCase("location")) {
+  alert("Location services are not supported yet.");
+}
+
+ if (chatContainer.innerHTML.includes.toLowerCase("canelo")) {
+  console.log('canelo triggered')
+  window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
+}
     
    }
 )
@@ -165,20 +180,5 @@ form.addEventListener('keyup', (e) => {
   }
 })
 
-if (chatContainer.innerHTML.includes("hi") || chatContainer.innerHTML.includes("Hi"))  {
-  alert("hi");
-}
- if (chatContainer.innerHTML.includes.toLowerCase("youtube")) {
-  alert("Youtube commands are not supported yet.");
-}
-
- if (chatContainer.innerHTML.includes.toLowerCase("location")) {
-  alert("Location services are not supported yet.");
-}
-
- if (chatContainer.innerHTML.includes.toLowerCase("canelo")) {
-  console.log('canelo triggered')
-  window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
-}
 
 console.log("Joel Iyalla vs African")
