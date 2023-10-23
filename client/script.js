@@ -125,6 +125,18 @@ const handleSubmit = async (e) => {
       console.log('smith triggered')
       window.open('http://smithcsrobot.weebly.com/');
     }
+    if (chatContainer.innerHTML.includes("riley") || chatContainer.innerHTML.includes("Riley")) {
+      console.log('Riley triggered')
+      window.open('https://docs.google.com/document/d/1F9oJiHEYS4PZlm9YnIu5rggM_f9cigHPBA1B5solzTw/edit?usp=sharing');
+    }
+    if (chatContainer.innerHTML.includes("lance") || chatContainer.innerHTML.includes("Lance")) {
+      console.log('Lance triggered')
+      window.open('https://docs.google.com/document/d/1wLyonAcoEwN7iDoNn1ucDn8Axw_5uXWqqIGK7RF7vGM/edit?usp=sharing');
+    }
+    if (chatContainer.innerHTML.includes("jaycoby") || chatContainer.innerHTML.includes("Jaycoby")) {
+      console.log('Jaycoby triggered')
+      window.open('https://docs.google.com/document/d/1iLLLc8X2czZC94hkxvbPym3DImLHaWUMOoDhsVGDE7M/edit?usp=sharing');
+    }
     if (chatContainer.innerHTML.includes("myself") || chatContainer.innerHTML.includes("Myself")) {
       console.log('charlie image triggered')
       window.open('https://i.pinimg.com/originals/de/23/83/de238328593da21dbf9185ed3f7d991d.gif');
