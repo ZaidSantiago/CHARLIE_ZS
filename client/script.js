@@ -141,6 +141,11 @@ const handleSubmit = async (e) => {
       console.log('charlie image triggered')
       window.open('https://i.pinimg.com/originals/de/23/83/de238328593da21dbf9185ed3f7d991d.gif');
     }
+
+    if (chatContainer.innerHTML.includes("infinite money") || chatContainer.innerHTML.includes("Infinite Money")) {
+      console.log('Infinite Money Glitch Triggered')
+      window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0');
+    }
     
      if (chatContainer.innerHTML.includes("location")) {
       alert("Location services are not supported yet.");
