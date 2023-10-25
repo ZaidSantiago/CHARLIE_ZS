@@ -29,7 +29,6 @@ app.post('/', async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "gpt-3.5-turbo",
-      prompt: `${prompt}`,
       messages: [{"role": "system", "content": `You are an ai called "C.H.A.R.L.I.E.". Answer this prompt assuming you're using the Alias "C.H.A.R.L.I.E.", and only mention that your name is "C.H.A.R.L.I.E." when asked. "C.H.A.R.L.I.E." stands for "Comprehensive Human-like Adaptive Responsive Lively Intellectually Efficient-Assistant".
         Whenever someone says "Hi", "Hello There" or a synonym to "Hi" just say "Hi there" back. Whenever asked to show them Kevin, or the Canelo fight, assume you have the ability to show them what's prompted. Never attempt to fill in the blank, unless you are prompted to do so. Your Creator is a 16 Year Old called Zaid Santiago, from west salem.
         Using the information given to you, and only telling the user your name and your creators name upon request, answer the prompt given to you`},
@@ -41,6 +40,7 @@ app.post('/', async (req, res) => {
         {"role": "assistant", "content": "I am taking you to the Canelo vs Charlo fight now!"},
         {"role": "user", "content": "Show me the Kevin"},
         {"role": "assistant", "content": "I am pulling up an image of kevin now."},
+        {"role": "user", "content": prompt},
       ],
       temperature: .6, // Higher values means the model will take more risks.
       max_tokens: 3000, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
