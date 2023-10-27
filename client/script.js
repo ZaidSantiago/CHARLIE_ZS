@@ -141,15 +141,25 @@ const handleSubmit = async (e) => {
       console.log('charlie image triggered')
       window.open('https://i.pinimg.com/originals/de/23/83/de238328593da21dbf9185ed3f7d991d.gif');
     }
+    if (chatContainer.innerHTML.includes("mcdonalds") || chatContainer.innerHTML.includes("McDonalds")) {
+      console.log('McDonalds triggered')
+      window.open('https://www.google.com/search?q=mcdonalds+near+me&rlz=1C1GCEA_enUS1078US1079&oq=mcdonalds+near+me&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIQCAEQLhjHARixAxjRAxiABDIKCAIQABixAxiABDINCAMQABiDARixAxiKBTINCAQQABixAxjJAxiABDIKCAUQABiSAxiABDIKCAYQABiSAxiKBTIKCAcQABixAxiABDINCAgQLhivARjHARiABNIBCDE4MzlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8');
+    }
 
     if (chatContainer.innerHTML.includes("infinite money") || chatContainer.innerHTML.includes("Infinite Money")) {
       console.log('Infinite Money Glitch Triggered')
+      window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0');
+    }
+    if (chatContainer.innerHTML.includes("zaid") || chatContainer.innerHTML.includes("Zaid") && chatContainer.innerHTML.includes("soul") || chatContainer.innerHTML.includes("Soul")) {
+      console.log('Sparring Footage Triggered')
       window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0');
     }
     
      if (chatContainer.innerHTML.includes("location")) {
       alert("Location services are not supported yet.");
     }
+
+    
     
      if (chatContainer.innerHTML.includes("canelo") || chatContainer.innerHTML.includes("Canelo")) {
       console.log('canelo triggered')
