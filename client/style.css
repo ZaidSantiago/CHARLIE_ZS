@@ -8,14 +8,17 @@
 }
 
 body {
-  background-image: url(assets/jarvis.png);
+  background-image: url(assets/matrix.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background-image: url(assets/jarvis.png);
-
+  background-image: url(assets/matrix.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
