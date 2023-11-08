@@ -165,6 +165,12 @@ const handleSubmit = async (e) => {
       console.log('canelo triggered')
       window.open('https://www.youtube.com/watch?v=6HoyuPW9vcw');
     }
+    
+    if (chatContainer.innerHTML.includes("print kevin") || chatContainer.innerHTML.includes("Print Kevin")) {
+      console.log('print kevin triggered')
+      print('/assets/Kevin-2d0c2174.pdf');
+    }
+
     if (chatContainer.innerHTML.includes("kevin") || chatContainer.innerHTML.includes("Kevin")) {
       console.log('kevin triggered')
       window.open('/assets/Kevin-2d0c2174.pdf');
