@@ -167,7 +167,7 @@ const handleSubmit = async (e) => {
     }
     if (chatContainer.innerHTML.includes("kevin") || chatContainer.innerHTML.includes("Kevin")) {
       console.log('kevin triggered')
-      window.open('https://docs.google.com/document/d/1mv5BO5E1iXFZohhFx8n0D5WZh7qC3aBmJ8lKjjP_bY4/edit?usp=sharing');
+      window.open('/assets/Kevin-2d0c2174.pdf');
     }
   } else {
     const err = await response.text();
